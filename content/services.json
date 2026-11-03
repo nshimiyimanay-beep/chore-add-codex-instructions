@@ -1,0 +1,44 @@
+[
+  {
+    "number": "01",
+    "title": "Audiovisual Production",
+    "description": "Films, photography, broadcasts, events and sound.",
+    "image": "",
+    "visible": true
+  },
+  {
+    "number": "02",
+    "title": "Printing & Promotional",
+    "description": "Publications, large-format graphics and branded materials.",
+    "image": "",
+    "visible": true
+  },
+  {
+    "number": "03",
+    "title": "Digital & Creative",
+    "description": "Design, websites, applications and digital media.",
+    "image": "",
+    "visible": true
+  },
+  {
+    "number": "04",
+    "title": "Content Development",
+    "description": "Writing, scripts, journalistic content and social media.",
+    "image": "",
+    "visible": true
+  },
+  {
+    "number": "05",
+    "title": "Media & Public Relations",
+    "description": "Media communication, events and sponsorship support.",
+    "image": "",
+    "visible": true
+  },
+  {
+    "number": "06",
+    "title": "Technical Solutions",
+    "description": "Multimedia equipment supply, systems and installation.",
+    "image": "",
+    "visible": true
+  }
+]

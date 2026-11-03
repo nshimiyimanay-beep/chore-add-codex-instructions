@@ -36,3 +36,13 @@ Automated tests are basic structural smoke checks, **not** browser visual, acces
 
 ## Deployment
 This is a static site that can later be published via an approved host after review. No production or staging host has been configured. Do not deploy without project owner authorization. Rollback is via reverting the reviewed commit on the deployment branch.
+
+## Administration dashboard (CMS v1)
+
+The management entry is at `/admin/`. It displays an overview and links to [Pages CMS](https://app.pagescms.org/) for **GitHub-authenticated editing**, with no secret or password stored in the public frontend. `.pages.yml` defines editors for homepage/about/contact/SEO, services, team, clients and portfolio projects; uploaded media is stored in `assets/uploads`.
+
+All public content is now read from `content/*.json` by `content.js`, with the approved original HTML acting as a fallback if loading fails. Portfolio is hidden unless a project has `published: true`. The first live GitHub authorization and publishing test must be completed by the repository owner before the CMS is considered activated.
+
+**How to enable:** Read [docs/CMS-GUIDE.md](docs/CMS-GUIDE.md). Sign in at Pages CMS, authorize this repository only, select the verified development/preview branch, edit content, save, and review the resulting GitHub commit and browser preview. A GitHub Pages deployment is not established by adding the CMS files alone.
+
+**Not included:** a custom back-office server, authentication database, private inbox, enquiries storage or publishing permissions beyond GitHub/Pages CMS.

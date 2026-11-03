@@ -1,5 +1,16 @@
 # ISO MEGA Website — Change Log
 
+## 2026-11-03 · feat/admin-cms-v1 · GitHub-backed administration dashboard
+- **Purpose:** Allow owner-managed updates to website content and uploaded media without requiring direct code editing for each change.
+- **Added:** `admin/index.html`, `admin/admin.css`, `admin/admin.js`, `.pages.yml`, `content/site.json`, `content/services.json`, `content/team.json`, `content/clients.json`, `content/projects.json`, `content.js`, CMS tests and user guide.
+- **Updated:** `index.html` now includes dynamic content bindings and a conditional published-project portfolio; `styles.css` includes responsive portfolio/team imagery; `package.json` checks all JS files.
+- **Preservation:** Approved logo, favicon, color system, hero layout, navigation, existing text and direct email contact retained as static fallback. No new backend or client-side password.
+- **Quality gate:** CI to check JS syntax and content structures; real Pages CMS GitHub sign-in, editor saves, browser responsiveness and production deployment **NOT TESTED** until authorized.
+- **Risk:** Content is committed to a public GitHub repository, and the CMS requires external GitHub App permission. Avoid all secrets and confidential client data.
+- **Deployment:** **NOT DEPLOYED** — changes remain on a review branch.
+- **Rollback:** Close/unmerge this pull request; revert its merge commit if merged into a preview branch.
+
+
 ## 2026-11-03 · feat/iso-mega-website-v1 · Phase 1 photographic art direction
 - **Purpose:** Bring the hero image closer to ISO MEGA's audiovisual-production positioning while preserving the approved layout and company brand.
 - **Changed:** `styles.css` only; replaced landscape photographer with professional ARRI studio camera-operator image, refined navy legibility overlay, added restrained brand-colored service-card edges and responsive photo crop.

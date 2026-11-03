@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Ngabonziza Jacques",
+    "role": "Managing Director",
+    "initials": "NJ",
+    "photo": "",
+    "visible": true
+  },
+  {
+    "name": "Nshimiyimana Youssouf",
+    "role": "Production Manager",
+    "initials": "NY",
+    "photo": "",
+    "visible": true
+  },
+  {
+    "name": "Ndiribika Pierre Clavers",
+    "role": "Marketing Manager",
+    "initials": "NP",
+    "photo": "",
+    "visible": true
+  },
+  {
+    "name": "Ruzigana Olivier",
+    "role": "Audiovisual Production Manager",
+    "initials": "RO",
+    "photo": "",
+    "visible": true
+  },
+  {
+    "name": "Rudasingwa Faustin",
+    "role": "Printing Service Manager",
+    "initials": "RF",
+    "photo": "",
+    "visible": true
+  },
+  {
+    "name": "Musafiri Innocent",
+    "role": "Content & Media Services Manager",
+    "initials": "MI",
+    "photo": "",
+    "visible": true
+  }
+]
