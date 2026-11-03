@@ -75,7 +75,7 @@
     const grid = $(".service-grid");
     if (!grid || !Array.isArray(items)) return;
     const visible = items.filter(s => s && s.visible !== false && typeof s.title === "string" && s.title.trim());
-    if (!visible.length) return;
+    if (!visible.length) { grid.replaceChildren(); return; }
     const fragment = document.createDocumentFragment();
     visible.forEach((s, idx) => {
       const card = create("article","service-card service-" + ["one","two","three","four","five","six"][idx % 6]);
