@@ -99,12 +99,12 @@ content:
       - { name: visible, label: Show on website, type: boolean }
   - name: projects
     label: Portfolio projects
-    type: collection
-    path: content/projects
+    type: file
+    path: content/projects.json
     format: json
-    filename: "{primary}.json"
-    view:
-      primary: title
+    list: true
+    operations:
+      delete: false
     fields:
       - { name: title, type: string, required: true }
       - { name: category, type: string }
