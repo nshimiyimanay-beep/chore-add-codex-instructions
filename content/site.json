@@ -1,0 +1,28 @@
+{
+  "hero": {
+    "eyebrow": "AUDIOVISUAL • PRINT • DIGITAL • MEDIA",
+    "headingFirst": "Ideas made",
+    "headingSecond": "visible.",
+    "taglineFirst": "Creative thinking. Technical execution.",
+    "taglineSecond": "Communication that connects.",
+    "backgroundImage": "",
+    "ctaPrimary": "Explore our services",
+    "ctaSecondary": "Start a project"
+  },
+  "about": {
+    "headingFirst": "One partner.",
+    "headingSecond": "Multiple solutions.",
+    "lead": "We bring ideas, production and technology together to help organizations communicate with clarity and impact.",
+    "body": "Founded in 2020, ISO MEGA Multimedia Ltd. supports businesses, institutions and organizations through integrated marketing communication, creative content, audiovisual production, printing, digital services and technical multimedia solutions."
+  },
+  "contact": {
+    "address": "Kibagabaga, DIV APPART, KG 19 Av 120, Kigali",
+    "phonePrimary": "+250 788 350 545",
+    "phoneSecondary": "+250 791 430 778",
+    "email": "isomegamultimedialtd@gmail.com"
+  },
+  "seo": {
+    "title": "ISO MEGA Multimedia Ltd. — Ideas Made Visible",
+    "description": "ISO MEGA Multimedia Ltd. — integrated audiovisual production, printing, digital content, media and technical solutions in Rwanda."
+  }
+}
