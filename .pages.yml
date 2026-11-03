@@ -1,0 +1,115 @@
+# ISO MEGA Website — GitHub-backed content administration
+# Pages CMS: https://app.pagescms.org/
+# Only connect this repository to the Pages CMS GitHub App after reviewing permissions.
+media:
+  input: assets/uploads
+  output: /assets/uploads
+  rename: safe
+
+settings:
+  content:
+    merge: true
+  commit:
+    templates:
+      create: "cms: create {path}"
+      update: "cms: update {path}"
+      delete: "cms: delete {path}"
+
+content:
+  - name: website
+    label: Website settings & homepage
+    type: file
+    path: content/site.json
+    format: json
+    operations:
+      delete: false
+    fields:
+      - name: hero
+        label: Homepage hero
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: headingFirst, label: First headline line, type: string, required: true }
+          - { name: headingSecond, label: Second headline line, type: string, required: true }
+          - { name: taglineFirst, label: Tagline line 1, type: string }
+          - { name: taglineSecond, label: Tagline line 2, type: string }
+          - { name: backgroundImage, label: Hero background image (optional), type: image }
+          - { name: ctaPrimary, label: Primary button label, type: string }
+          - { name: ctaSecondary, label: Secondary button label, type: string }
+      - name: about
+        label: About ISO MEGA
+        type: object
+        fields:
+          - { name: headingFirst, label: Heading line 1, type: string }
+          - { name: headingSecond, label: Heading line 2, type: string }
+          - { name: lead, label: Intro statement, type: text }
+          - { name: body, label: About description, type: text }
+      - name: contact
+        label: Company contact details
+        type: object
+        fields:
+          - { name: address, type: string }
+          - { name: phonePrimary, label: Main phone, type: string }
+          - { name: phoneSecondary, label: Alternate phone, type: string }
+          - { name: email, type: string }
+      - name: seo
+        label: Search engine metadata
+        type: object
+        fields:
+          - { name: title, type: string }
+          - { name: description, type: text }
+  - name: services
+    label: Services
+    type: file
+    path: content/services.json
+    format: json
+    list: true
+    operations:
+      delete: false
+    fields:
+      - { name: number, label: Display order, type: string }
+      - { name: title, type: string, required: true }
+      - { name: description, type: text }
+      - { name: image, label: Service image (optional), type: image }
+      - { name: visible, label: Show on website, type: boolean }
+  - name: team
+    label: Team profiles
+    type: file
+    path: content/team.json
+    format: json
+    list: true
+    operations:
+      delete: false
+    fields:
+      - { name: name, type: string, required: true }
+      - { name: role, label: Job title, type: string }
+      - { name: initials, label: Fallback initials, type: string }
+      - { name: photo, label: Official approved photo (optional), type: image }
+      - { name: visible, label: Show on website, type: boolean }
+  - name: clients
+    label: Client references
+    type: file
+    path: content/clients.json
+    format: json
+    list: true
+    operations:
+      delete: false
+    fields:
+      - { name: name, label: Client name, type: string, required: true }
+      - { name: visible, label: Show on website, type: boolean }
+  - name: projects
+    label: Portfolio projects
+    type: collection
+    path: content/projects
+    format: json
+    filename: "{primary}.json"
+    view:
+      primary: title
+    fields:
+      - { name: title, type: string, required: true }
+      - { name: category, type: string }
+      - { name: summary, type: text }
+      - { name: image, label: Cover image, type: image }
+      - { name: client, label: Client (if permitted), type: string }
+      - { name: year, type: string }
+      - { name: published, label: Publish on public website, type: boolean }
