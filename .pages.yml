@@ -28,7 +28,6 @@ content:
         label: Homepage hero
         type: object
         fields:
-          - { name: eyebrow, label: Small heading, type: string }
           - { name: headingFirst, label: First headline line, type: string, required: true }
           - { name: headingSecond, label: Second headline line, type: string, required: true }
           - { name: taglineFirst, label: Tagline line 1, type: string }
