@@ -3,7 +3,7 @@ on:
   push:
     branches: [main, 'feat/**']
   pull_request:
-    branches: [main]
+    branches: [main, 'feat/iso-mega-website-v1']
 jobs:
   smoke:
     runs-on: ubuntu-latest
