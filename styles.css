@@ -19,3 +19,18 @@
 .intro h2{font-weight:800}
 @media(max-width:850px){.hero-photo{background-position:61% center}}
 @media(max-width:570px){.hero-photo{background-position:64% center}.hero h1{font-size:clamp(48px,12vw,65px);letter-spacing:-.075em}.hero-content>p{max-width:310px}}
+
+/* CMS-managed portfolio: hidden until an approved project is published. */
+.portfolio-section{background:#fff}
+.portfolio-section[hidden]{display:none!important}
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.portfolio-card{background:#f4f8fa;overflow:hidden;border:1px solid var(--line)}
+.portfolio-photo{height:230px;background:#0b2438;display:grid;place-items:center;color:#acd5ee;font-size:11px;letter-spacing:.2em;font-weight:800;background-position:center;background-size:cover}
+.portfolio-details{padding:24px}
+.portfolio-details small{font-size:11px;letter-spacing:.12em;font-weight:800;color:#078fcb}
+.portfolio-details h3{font-size:24px;line-height:1.2;margin:9px 0 12px}
+.portfolio-details p{font-size:13px;line-height:1.7;color:var(--muted);margin:0}
+.team-grid img.team-photo{grid-row:span 2;width:52px;height:52px;border-radius:50%;object-fit:cover;background:#e7f4fb}
+.contact-details strong[data-content="contact-address"]{white-space:pre-line}
+@media(max-width:850px){.portfolio-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:570px){.portfolio-grid{grid-template-columns:1fr}.portfolio-photo{height:220px}}
