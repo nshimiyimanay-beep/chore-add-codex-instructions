@@ -3,3 +3,6 @@
 /* Official identity is an unchanged supplied image, never a CSS reconstruction. */
 .official-logo{display:block;width:220px;height:auto;max-height:65px;object-fit:contain;background:white;border-radius:3px;padding:4px}
 @media(max-width:570px){.official-logo{width:178px;max-height:54px}}
+
+/* Approved refinement: slightly heavier About section heading only. */
+.intro h2{font-weight:800}
