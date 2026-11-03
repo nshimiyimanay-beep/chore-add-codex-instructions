@@ -1,5 +1,15 @@
 # ISO MEGA Website — Change Log
 
+## 2026-11-03 · feat/iso-mega-website-v1 · Phase 1 photographic art direction
+- **Purpose:** Bring the hero image closer to ISO MEGA's audiovisual-production positioning while preserving the approved layout and company brand.
+- **Changed:** `styles.css` only; replaced landscape photographer with professional ARRI studio camera-operator image, refined navy legibility overlay, added restrained brand-colored service-card edges and responsive photo crop.
+- **Source:** Unsplash photographer Cemrecan Yurtman, studio photograph `RFxerC6QJcc`, published June 10, 2026. Temporary illustrative image, not represented as ISO MEGA personnel or work.
+- **Unchanged:** Official ISO MEGA logo, favicon, site structure, navigation, copy, contacts, and interactive behavior.
+- **Verification:** Static source inspection completed. GitHub automated checks triggered; final result requires confirmation. Visual browser review, mobile screenshots, and performance checks **NOT RUN**.
+- **Deployment:** **NOT DEPLOYED BY THIS CHANGE**; feature branch updated. GitHub Pages preview requires separate publication configuration.
+- **Rollback:** Revert the corresponding `styles.css` commit or restore the preceding stylesheet.
+
+
 ## 2026-11-03 · feat/iso-mega-website-v1 · Initial website prototype
 - **Purpose:** Create the first responsive public website using the supplied company profile and logo.
 - **Changed:** `index.html`, `styles.css`, `script.js`, `assets/iso-mega-logo.png`, test/CI configuration, documentation.
