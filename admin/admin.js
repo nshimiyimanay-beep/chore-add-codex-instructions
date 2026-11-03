@@ -5,7 +5,7 @@
     ["services","content/services.json",a=>Array.isArray(a)?a.filter(x=>x.visible!==false).length:0],
     ["team","content/team.json",a=>Array.isArray(a)?a.filter(x=>x.visible!==false).length:0],
     ["clients","content/clients.json",a=>Array.isArray(a)?a.filter(x=>x.visible!==false).length:0],
-    ["projects","content/projects/index.json",a=>Array.isArray(a)?a.filter(x=>x.published===true).length:0]
+    ["projects","content/projects.json",a=>Array.isArray(a)?a.filter(x=>x.published===true).length:0]
   ];
   for (const [id,path,count] of items) {
     fetch(new URL(path,base),{cache:"no-cache"}).then(r => {if (!r.ok) throw Error("Unpublished"); return r.json();})
