@@ -156,6 +156,6 @@
     load("content/services.json",applyServices);
     load("content/team.json",applyTeam);
     load("content/clients.json",applyClients);
-    load("content/projects/index.json",applyPortfolio);
+    load("content/projects.json",applyPortfolio);
   });
 })();
