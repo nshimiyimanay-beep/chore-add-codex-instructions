@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#0c1d30">
+  <title>ISO MEGA · Administration</title>
+  <link rel="icon" href="../assets/favicon.png?v=2" type="image/png">
+  <link rel="stylesheet" href="./admin.css">
+  <script src="./admin.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <aside class="sidebar">
+    <a href="../" class="logo" aria-label="View ISO MEGA public website"><img src="../assets/iso-mega-logo.png" alt="ISO MEGA Multimedia Ltd"></a>
+    <span class="section-label">CONTENT MANAGEMENT</span>
+    <nav aria-label="Administration sections">
+      <a href="#overview" class="active"><span aria-hidden="true">◫</span> Overview</a>
+      <a href="#content"><span aria-hidden="true">▦</span> Website content</a>
+      <a href="#publishing"><span aria-hidden="true">↗</span> Publishing</a>
+      <a href="#help"><span aria-hidden="true">?</span> Help & access</a>
+    </nav>
+    <div class="sidebar-bottom"><span class="dot"></span> GitHub-backed CMS<br><small>Secure editing via Pages CMS</small></div>
+  </aside>
+  <main id="main">
+    <header class="topbar"><div><span class="crumb">ISO MEGA / ADMINISTRATION</span><h1>Website dashboard</h1></div><a class="top-link" href="../">View website ↗</a></header>
+    <section id="overview" class="panel hero-panel">
+      <div><div class="eyebrow">WEBSITE OPERATIONS</div><h2>Manage your digital presence.</h2><p>Edit services, publish projects, update team information and upload approved images using the secure GitHub-connected content editor.</p><div class="actions"><a class="primary" href="https://app.pagescms.org/" target="_blank" rel="noopener noreferrer">Open content editor ↗</a><a class="secondary" href="https://github.com/nshimiyimanay-beep/chore-add-codex-instructions/pulls" target="_blank" rel="noopener noreferrer">Review changes</a></div></div><div class="hero-art" aria-hidden="true"><span>ISO</span><div class="rings"></div></div>
+    </section>
+    <section class="stats" aria-label="Content statistics">
+      <article><span>SERVICES</span><strong id="count-services">—</strong><small>Editable service categories</small></article>
+      <article><span>TEAM MEMBERS</span><strong id="count-team">—</strong><small>Profile entries</small></article>
+      <article><span>CLIENTS</span><strong id="count-clients">—</strong><small>References in site data</small></article>
+      <article><span>PUBLISHED PROJECTS</span><strong id="count-projects">—</strong><small>Visible portfolio entries</small></article>
+    </section>
+    <section id="content"><div class="section-heading"><div><div class="eyebrow">01 / CONTENT</div><h2>Website management</h2></div><span class="subtle">Your website's files are managed in GitHub.</span></div>
+      <div class="module-grid">
+        <article class="module"><span class="module-icon">✦</span><h3>Homepage & contact</h3><p>Hero statements, about section, contact details and search metadata.</p><a href="https://app.pagescms.org/" target="_blank" rel="noopener noreferrer">Edit website settings ↗</a></article>
+        <article class="module"><span class="module-icon">▤</span><h3>Services</h3><p>Add, edit, reorder or hide service cards, descriptions and images.</p><a href="https://app.pagescms.org/" target="_blank" rel="noopener noreferrer">Manage services ↗</a></article>
+        <article class="module"><span class="module-icon">▣</span><h3>Portfolio projects</h3><p>Create project entries, upload covers and publish only approved work.</p><a href="https://app.pagescms.org/" target="_blank" rel="noopener noreferrer">Manage portfolio ↗</a></article>
+        <article class="module"><span class="module-icon">◉</span><h3>Team profiles</h3><p>Keep names, roles and approved portraits accurate and up to date.</p><a href="https://app.pagescms.org/" target="_blank" rel="noopener noreferrer">Manage team ↗</a></article>
+        <article class="module"><span class="module-icon">◇</span><h3>Clients & experience</h3><p>Control which verified client references appear publicly.</p><a href="https://app.pagescms.org/" target="_blank" rel="noopener noreferrer">Manage clients ↗</a></article>
+        <article class="module"><span class="module-icon">▧</span><h3>Media library</h3><p>Upload ISO MEGA-approved photography and imagery for website content.</p><a href="https://app.pagescms.org/" target="_blank" rel="noopener noreferrer">Open media library ↗</a></article>
+      </div>
+    </section>
+    <section id="publishing" class="publish panel"><div class="eyebrow">02 / PUBLISHING</div><h2>Controlled publishing workflow</h2><div class="timeline"><div><strong>1</strong><span>Sign in to Pages CMS with GitHub</span></div><div><strong>2</strong><span>Choose this repository and the website development branch</span></div><div><strong>3</strong><span>Update text, images or portfolio entries</span></div><div><strong>4</strong><span>Save to GitHub and review the updated preview</span></div><div><strong>5</strong><span>Approve releases before merging into production</span></div></div><p class="notice">Pages CMS requires one-time GitHub authorization. This dashboard is a public read-only management entry: no password is stored here, and only accounts permitted by GitHub can save edits. The production website is not automatically launched by opening this page.</p></section>
+    <section id="help" class="help"><div><div class="eyebrow">03 / ACCESS</div><h2>One-time connection</h2><p>Open Pages CMS, sign in with the GitHub account that owns the ISO MEGA repository, authorize the GitHub App for this repository only, and select the <code>feat/admin-cms-v1</code> branch while reviewing the CMS. Once the branch is merged into the approved preview branch, select that branch instead.</p><p>Already connected? Open the content editor and choose the relevant content section from its sidebar. You can return to this overview at any time.</p></div><a class="primary" href="https://app.pagescms.org/" target="_blank" rel="noopener noreferrer">Connect CMS ↗</a></section>
+    <footer>ISO MEGA Multimedia Ltd. · Administration overview · Content publishing requires GitHub authorization.</footer>
+  </main>
+</body>
+</html>
